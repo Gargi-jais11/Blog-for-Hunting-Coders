@@ -1,0 +1,15 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 4rem;
+    min-height: 100vh;
+  }
+  .container{
+    padding:0 4rem ;
+  }
+  .maindiv{
+    padding-top: 2rem;
+    text-align: justify;
+  }
