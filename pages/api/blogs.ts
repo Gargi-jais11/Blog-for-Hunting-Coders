@@ -8,8 +8,10 @@ export default async function handler(
   res: NextApiResponse,
 ) {
   console.log(req.query.count)
+  const count = req.query.count ? parseInt(req.query.count as string, 10) : 5;
+
   let datadir = await fs.promises.readdir("blogdata");
-  datadir=datadir.slice(0, parseInt(req.query.count))
+  datadir=datadir.slice(0, count)
   let myfiles;
   let allfiles = [];
   for (let index = 0; index < datadir.length; index++) {
