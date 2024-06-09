@@ -72,7 +72,7 @@ const Contact = () => {
           <div className="mb-3">
             <label htmlFor="email" className="form-label">Email address</label>
             <input type="email" value={email} onChange={handleChange} className="form-control" id="email" name="email" aria-describedby="emailHelp" />
-            <div id="emailHelp" className="form-text-light">We'll never share your email with anyone else.</div>
+            <div id="emailHelp" className="form-text-light">We will never share your email with anyone else.</div>
           </div>
           <div className="mb-3">
             <label htmlFor="phone" className="form-label">Phone Number</label>

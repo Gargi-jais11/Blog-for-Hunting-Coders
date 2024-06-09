@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import styles from "@/styles/BlogPost.module.css";
 //step 1:find the file corresponding to the slug
 //step 2: populate them inside the page
-const slug = (props) => {
+const Slug = (props) => {
 
   function createMarkup(content)
   {
@@ -38,4 +38,4 @@ export async function getServerSideProps(context){
     props : {blogData},
   }
 }
-export default slug;
+export default Slug;
